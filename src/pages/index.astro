@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import Stats from '../components/Stats.astro';
+import Pricing from '../components/Pricing.astro';
+import Benefits from '../components/Benefits.astro';
+
+const pageTitle = "Premium IPTV Subscription Service";
+const pageDescription = "Get access to 50,000+ channels and VOD content with our premium IPTV subscription. Enjoy HD quality streaming, sports channels, and 24/7 support.";
+---
+
+<Layout 
+  title={pageTitle}
+  description={pageDescription}
+  image="/images/hero-tv.jpg"
+>
+  <main>
+    <Hero />
+    <Stats />
+    <Pricing />
+    <Benefits />
+  </main>
+</Layout>
